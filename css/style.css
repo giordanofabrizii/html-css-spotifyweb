@@ -72,6 +72,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: scroll;
 }
 
 li.centered{
@@ -146,8 +147,10 @@ main .centered{
     transform: translateY(-.8rem);
 }
 
-main .wrapper{
+main .wrapped{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: ;
 }
 
 main .recently-played h1{
@@ -155,15 +158,11 @@ main .recently-played h1{
     margin-bottom: 1.5rem;
 }
 
-main .row{
-    width: 30rem;
-    display: flex;
-}
 
 main article{
-    display: inline-block;
-    width: calc((100% / 2) - 2rem);
+    width: calc((100% / 2) - 1rem);
     vertical-align: top;
+    margin-right: 1rem;
 }
 
 main article > img{
@@ -224,6 +223,7 @@ img[alt="spotify logo"]{
 /* ! MEDIA SECTION */
 /* ************************ */
 
+/* *phone landscape */
 @media screen and (min-width: 576px){
     :root{
         --header-width:10rem
@@ -309,4 +309,18 @@ img[alt="spotify logo"]{
     }
 
     /* ! MAIN */
+}
+
+/* *vertical tablet  */
+@media screen and (min-width: 768px){
+    main article{
+        width: calc((100% / 4) - 1rem);
+    }
+}
+
+/* *landscape tablet  */
+@media screen and (min-width: 992px){
+    main article{
+        width: calc((100% / 6) - 1rem);
+    }
 }
