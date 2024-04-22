@@ -422,6 +422,10 @@ img[alt="spotify logo"]{
     footer section.brano .brano-info p{
         display: inline;
     }
+
+    footer section.brano .brano-info p:last-of-type{
+        margin-left: 0;
+    }
 }
 
 /* *vertical tablet  */
