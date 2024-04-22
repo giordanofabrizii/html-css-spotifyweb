@@ -45,39 +45,32 @@ a{
 /* ************************ */
 /* ! HEADER SECTION */
 /* ************************ */
-
 header{
     width: var(--header-width);
     height: 100%;
     background-color: #000000;
-    padding: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 li.centered{
-    display: flex;
-    justify-content: center;
     margin-bottom: .3rem;
-}
-
-.profile-nav> div {
-    margin-bottom: .5rem;
-}
-
-.profile-me{
-    margin: 0 auto;
+    padding-left: .6rem;
 }
 
 .profile-me > div{
     display: flex;
     justify-content: center;
+    margin: .5rem;
 }
 
 header .app{
     font-size: .8rem;
-    margin: 1rem 0;
+}
+
+header .profile-nav > div{
+    padding: .5rem;
 }
 
 header i.profile{
@@ -116,9 +109,43 @@ img.logo-small{
     width: 1.5rem;
 }
 
+img[alt="spotify logo"]{
+    width: 80%;
+}
+
 /* ************************ */
 /* ? COLOR SECTION */
 /* ************************ */
 .white-color{
     color: white;
+}
+
+/* ************************ */
+/* ! MEDIA SECTION */
+/* ************************ */
+
+@media screen and (min-width: 576px){
+    :root{
+        --header-width:10rem
+    }
+
+    .desktop-invisible{
+        display: none;
+    }
+
+    .mobile-invisible{
+        display: block;
+    }
+
+    .profile-me > div {
+        display: block;
+    }
+
+    header .profile-nav > div{
+        padding: 1rem;
+    }
+
+    li.centered{
+        padding-left: 1rem;
+    }
 }
