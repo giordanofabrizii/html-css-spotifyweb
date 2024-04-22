@@ -9,7 +9,7 @@
 /* ************************ */
 :root{
     --footer-height: 5rem;
-    --header-width: 3rem;
+    --header-width: 2.5rem;
 }
 
 .horizontal-alignment{
@@ -17,8 +17,29 @@
     flex-direction: row;
 }
 
+.vertical-alignment{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-centered{
+    align-items: center;
+}
+
 .main-container{
     height: calc(100vh - var(--footer-height));
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mobile-invisible{
+    display: none;
 }
 
 /* ************************ */
@@ -29,6 +50,39 @@ header{
     width: var(--header-width);
     height: 100%;
     background-color: #000000;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li.centered{
+    display: flex;
+    justify-content: center;
+    margin-bottom: .3rem;
+}
+
+.profile-nav> div {
+    margin-bottom: .5rem;
+}
+
+.profile-me{
+    margin: 0 auto;
+}
+
+.profile-me > div{
+    display: flex;
+    justify-content: center;
+}
+
+header .app{
+    font-size: .8rem;
+    margin: 1rem 0;
+}
+
+header i.profile{
+    color: #7f7f7f;
+    font-size: 1.3rem;
 }
 
 /* ************************ */
@@ -48,4 +102,23 @@ main{
 footer{
     height: var(--footer-height);
     background-color: #282828;
+}
+
+/* ************************ */
+/* ? IMAGE SECTION */
+/* ************************ */
+
+.small-img{
+    width: 1.4rem;
+}
+
+img.logo-small{
+    width: 1.5rem;
+}
+
+/* ************************ */
+/* ? COLOR SECTION */
+/* ************************ */
+.white-color{
+    color: white;
 }
