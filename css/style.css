@@ -12,6 +12,7 @@
 :root{
     --footer-height: 5rem;
     --header-width: 2.5rem;
+    --upgrade-color: rgba(0,0,0,0.3)
 }
 
 .horizontal-alignment{
@@ -44,8 +45,21 @@ a{
     display: none;
 }
 
-span.upper{
+.upper{
     text-transform: uppercase;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.rounded{
+    padding: .5rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 3rem;
+    font-weight: 800;
+    font-size: .7rem;
 }
 
 /* ************************ */
@@ -92,6 +106,83 @@ main{
     width: calc(100vw - var(--header-width));
     height: 100%;
     background-color: #141922;
+    overflow: scroll;
+}
+
+main .centered{
+    padding: 1rem;
+}
+
+.upgrade{
+    background-color: var(--upgrade-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    left: var(--header-width);
+    right: 0;
+}
+
+.music-container{
+    margin-top: 3rem;
+}
+
+.music-container ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.music-container ul li{
+    font-size: .8rem;
+    margin: 0 1rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.music-container li.selected hr{
+    width: 35%;
+    color: #a8f82d;
+    margin: 0 auto;
+    transform: translateY(-.8rem);
+}
+
+main .wrapper{
+    flex-wrap: wrap;
+}
+
+main .recently-played h1{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main .row{
+    width: 30rem;
+    display: flex;
+}
+
+main article{
+    display: inline-block;
+    width: calc((100% / 2) - 2rem);
+    vertical-align: top;
+}
+
+main article > img{
+    width: calc(100%);
+}
+
+main article .title{
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+    line-height: 1rem;
+    margin-top: .5rem;
+}
+
+main article .subtitle{
+    color: #747474;
+    font-size: .7rem;
+    text-align: center;
+    line-height: 1.5rem;
 }
 
 /* ************************ */
@@ -146,6 +237,7 @@ img[alt="spotify logo"]{
         display: block;
     }
 
+    /* ! HEADER */
     .profile-me > div{
         justify-content: start;
         margin: .2rem .5rem;
@@ -182,7 +274,7 @@ img[alt="spotify logo"]{
         margin-left: .3rem;
     }
 
-    li.selected{
+    header li.selected{
         border-left: 3px solid #a8f82d;
     }
 
@@ -215,4 +307,6 @@ img[alt="spotify logo"]{
         width: 90%;
         margin: 0 auto;
     }
+
+    /* ! MAIN */
 }
