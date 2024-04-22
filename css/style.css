@@ -110,6 +110,10 @@ main{
     overflow: scroll;
 }
 
+main section{
+    margin-bottom: 2rem;
+}
+
 main .centered{
     padding: 1rem;
 }
@@ -150,7 +154,6 @@ main .centered{
 main .wrapped{
     display: flex;
     flex-wrap: wrap;
-    justify-content: ;
 }
 
 main .recently-played h1{
@@ -182,6 +185,18 @@ main article .subtitle{
     font-size: .7rem;
     text-align: center;
     line-height: 1.5rem;
+}
+
+main p.gray-color{
+    margin: .5rem 0 1.5rem 0;
+}
+
+main article.artist img{
+    border-radius: 50%;
+}
+
+main .artisti-popolari h1{
+    margin-bottom: 1rem;
 }
 
 /* ************************ */
@@ -223,7 +238,7 @@ img[alt="spotify logo"]{
 /* ! MEDIA SECTION */
 /* ************************ */
 
-/* *phone landscape */
+/* *landscape phone */
 @media screen and (min-width: 576px){
     :root{
         --header-width:10rem
@@ -324,3 +339,5 @@ img[alt="spotify logo"]{
         width: calc((100% / 6) - 1rem);
     }
 }
+
+/* *desktop */
