@@ -206,6 +206,100 @@ main .artisti-popolari h1{
 footer{
     height: var(--footer-height);
     background-color: #282828;
+    justify-content: space-between;
+}
+
+img[alt="current song cover"]{
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+}
+
+footer > section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer > section:first-of-type{
+    margin-left: .6rem;
+}
+
+footer .brano-info h4{
+    font-size: .8rem;
+    margin-left: .5rem;
+}
+
+footer .brano-info p{
+    font-size: .6rem;
+    margin-left: .5rem;
+}
+
+footer .icons{
+    height: 2rem;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+footer .icons i{
+    font-size: .8rem;
+}
+
+footer .player{
+    justify-content: center;
+}
+
+footer .player i{
+    margin: 0 .5rem;
+    line-height: 1.6rem;
+}
+
+footer .player i:nth-child(3){
+    font-size: 1.6rem;
+    margin: 0 1.2rem;
+}
+
+footer .player .controls{
+    margin-bottom: .3rem;
+}
+
+footer .volume i{
+    margin: 0 .3rem;
+    font-size: 0.8rem;
+}
+
+footer .time p{
+    font-size: .6rem;
+    font-weight: 700;
+}
+
+footer .progress-bar{
+    background-color: #5d5d5d;
+    height: .3rem;
+    border-radius: 2rem;
+    align-self: center;
+    margin: 0 .5rem;
+}
+footer .time .progress-bar{
+    width: 28vw;
+}
+
+footer .time .actual-progress{
+    width: 20%;
+}
+
+footer .actual-progress{
+    height: 100%;
+    border-radius: 2rem;
+    background-color: #c1c1c1;
+}
+
+footer .volume .progress-bar{
+    width: 4rem;
+}
+
+footer .volume .actual-progress{
+    width: 30%;
 }
 
 /* ************************ */
@@ -323,7 +417,11 @@ img[alt="spotify logo"]{
         margin: 0 auto;
     }
 
-    /* ! MAIN */
+    /* ! FOOTER */
+
+    footer section.brano .brano-info p{
+        display: inline;
+    }
 }
 
 /* *vertical tablet  */

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- todo CAMBIARE IMMAGINE PROFILO -->
+    <!-- todo AGGIUNGERE HOVER -->
+
     <div class="horizontal-alignment main-container">
         <header class="vertical-alignment"> <!-- aside section -->
             <section class="profile-nav">
@@ -160,8 +163,49 @@
         </main>
     </div>
 
-    <footer> <!-- player section -->
+    <footer class="horizontal-alignment"> <!-- player section -->
+        <section class="brano horizontal-alignment">
+            <img src="./img/sinister.jpeg" alt="current song cover">
+            <div class="brano-info">
+                <h4 class="white-color">Sinister</h4>
+                <div>
+                    <p class="gray-color">Brano</p>
+                    <p class="gray-color">Nome</p>
+                </div>
+            </div>
 
+            <div class="icons vertical-alignment">
+                <i class="fa-regular fa-heart gray-color"></i>
+                <i class="fa-regular fa-folder gray-color"></i>
+            </div>
+        </section>
+
+        <section class="player vertical-alignment">
+            <div class="controls horizontal-alignment">
+                <i class="fa-solid fa-shuffle white-color"></i>
+                <i class="fa-solid fa-backward-step white-color"></i>
+                <i class="fa-regular fa-circle-play white-color"></i>
+                <i class="fa-solid fa-forward-step white-color"></i>
+                <i class="fa-solid fa-rotate-right white-color"></i>
+            </div>
+            <div class="time horizontal-alignment">
+                <p class="white-color">0:25</p>
+                <div class="progress-bar">
+                    <div class="actual-progress"></div>
+                </div>
+                <p class="white-color">4:35</p>
+            </div>
+        </section>
+
+        <section class="volume">
+            <i class="fa-solid fa-list white-color"></i>
+            <i class="fa-solid fa-desktop white-color"></i>
+            <i class="fa-solid fa-volume-high white-color"></i>
+
+            <div class="progress-bar">
+                <div class="actual-progress"></div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
