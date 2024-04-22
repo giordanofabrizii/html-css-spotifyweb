@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    font-family: Montserrat , sans-serif;
 }
 
 /* ************************ */
@@ -42,6 +44,10 @@ a{
     display: none;
 }
 
+span.upper{
+    text-transform: uppercase;
+}
+
 /* ************************ */
 /* ! HEADER SECTION */
 /* ************************ */
@@ -56,7 +62,7 @@ header{
 
 li.centered{
     margin-bottom: .3rem;
-    padding-left: .6rem;
+    padding-left: .55rem;
 }
 
 .profile-me > div{
@@ -120,6 +126,9 @@ img[alt="spotify logo"]{
     color: white;
 }
 
+.gray-color{
+    color: #747474;
+}
 /* ************************ */
 /* ! MEDIA SECTION */
 /* ************************ */
@@ -137,15 +146,73 @@ img[alt="spotify logo"]{
         display: block;
     }
 
-    .profile-me > div {
-        display: block;
+    .profile-me > div{
+        justify-content: start;
+        margin: .2rem .5rem;
     }
 
     header .profile-nav > div{
         padding: 1rem;
     }
 
+    header nav.mobile-invisible h2{
+        font-size: .8rem;
+        font-weight: 800;
+    }
+
     li.centered{
         padding-left: 1rem;
+        display: flex;
+        border-left: 3px solid black;
+    }
+
+    header h3{
+        font-size: .7rem;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+
+    nav.mobile-invisible ul h3{
+        line-height: 1.6rem;
+    }
+
+    header .small-img +h3,
+    .new-playlist > h3,
+    .profile-me h3{
+        margin-left: .3rem;
+    }
+
+    li.selected{
+        border-left: 3px solid #a8f82d;
+    }
+
+    nav.mobile-invisible{
+        padding: .5rem 1rem;
+    }
+
+    .new-playlist > div{
+        text-align: center;
+        height: 2rem;
+        aspect-ratio: 1/1;
+        background-color: #747474;
+    }
+
+    .new-playlist > div > p{
+        line-height: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    div.new-playlist{
+        margin: .4rem 0;
+    }
+
+    .profile-me i{
+        line-height: 2rem;
+    }
+
+    header hr{
+        width: 90%;
+        margin: 0 auto;
     }
 }
