@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -166,10 +166,25 @@ main article{
     width: calc((100% / 2) - 1rem);
     vertical-align: top;
     margin-right: 1rem;
+    position: relative;
+}
+
+main .opacity{
+    width: 100%;
+    aspect-ratio: 1;
+    font-size: 3rem;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+}
+
+main .artisti-popolari .opacity{
+    border-radius: 50%;
 }
 
 main article > img{
-    width: calc(100%);
+    width: 100%;
 }
 
 main article .title{
@@ -328,6 +343,7 @@ img[alt="spotify logo"]{
 .gray-color{
     color: #747474;
 }
+
 /* ************************ */
 /* ! MEDIA SECTION */
 /* ************************ */
@@ -442,4 +458,12 @@ img[alt="spotify logo"]{
     }
 }
 
-/* *desktop */
+/* ************************ */
+/* ! HOVER SECTION */
+/* ************************ */
+
+article:hover > img + .opacity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
