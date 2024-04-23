@@ -307,6 +307,8 @@ footer .actual-progress{
     height: 100%;
     border-radius: 2rem;
     background-color: #c1c1c1;
+    position: relative;
+    display: flex;
 }
 
 footer .volume .progress-bar{
@@ -490,4 +492,18 @@ li:hover,
 
 .player .controls .fa-circle-play:hover{
     font-size: 2rem;
+}
+
+.progress-bar:hover .actual-progress{
+    background-color: #a8f82d;
+}
+
+.progress-bar:hover .actual-progress .control-sphere{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    right: -0.5rem;
+    align-self: center;
 }
