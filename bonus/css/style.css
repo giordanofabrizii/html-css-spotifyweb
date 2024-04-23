@@ -150,6 +150,15 @@ span.rotate{
 }
 
 /* ***************** */
+/* ? MAIN */
+/* ***************** */
+
+main{
+    width: calc(100vw - var(--header-width) - 1rem);
+    margin: 0 0 0 .5rem;
+}
+
+/* ***************** */
 /* ! COLOR CLASSES */
 /* ***************** */
 .gray-back{
