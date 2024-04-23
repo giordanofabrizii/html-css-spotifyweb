@@ -275,7 +275,7 @@ footer .player i:nth-child(3){
 }
 
 footer .player .controls{
-    margin-bottom: .3rem;
+    margin-bottom: .5rem;
 }
 
 footer .volume i{
@@ -482,4 +482,12 @@ li:hover,
 
 .brano-info p:hover{
     text-decoration: underline;
+}
+
+.upgrade a:hover{
+    padding: .7rem 2rem;
+}
+
+.player .controls .fa-circle-play:hover{
+    font-size: 2rem;
 }
