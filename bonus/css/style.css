@@ -211,7 +211,7 @@ section.recently{
 }
 
 article.disk.rounded{
-    width: calc((var(--main-width) / 4) - 1.6rem);
+    width: calc((var(--main-width) / 4) - 1.35rem);
     height: 4rem;
     object-fit: contain;
     border-radius: 4px;
@@ -228,6 +228,27 @@ article.disk h2{
     line-height: 4rem;
     margin-left: .5rem;
     font-size: 1rem;
+}
+
+article.disk:nth-child(4n + 1){
+    margin-left: 0;
+}
+
+article.disk:nth-child(4n){
+    margin-right: 0;
+}
+
+main > section > h2{
+    margin-top: 1rem;
+}
+
+article.card{
+    width: calc(var(--main-width) / 7);
+    padding: 0.5rem;
+}
+
+article.card img{
+    width: 100%;
 }
 
 /* ***************** */
