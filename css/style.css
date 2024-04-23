@@ -467,3 +467,19 @@ article:hover > img + .opacity{
     justify-content: center;
     align-items: center;
 }
+
+.profile-nav li h3:hover,
+.app:hover h3,
+.brano-info p:hover,
+li:hover,
+.brano .icons i:hover{
+    color: white;
+}
+
+.new-playlist:hover > div{
+    background-color: white;
+}
+
+.brano-info p:hover{
+    text-decoration: underline;
+}
