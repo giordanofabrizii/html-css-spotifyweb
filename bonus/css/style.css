@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ***************** */
+/* ! UTILITIES */
+/* ***************** */
+:root{
+    --black: #000000;
+    --gray: #121212;
+}
+
+body {
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ***************** */
+/* ! COLOR CLASSES */
+/* ***************** */
+.gray-back{
+    background-color: var(--gray);
+}
