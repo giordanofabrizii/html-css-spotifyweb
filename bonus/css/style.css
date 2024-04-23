@@ -15,6 +15,7 @@
     --spotify-green: #1dd35e;
     --header-width: 27rem;
     --footer-height:5rem;
+    --main-width: calc(100vw - var(--header-width) - 1rem);
 }
 
 body {
@@ -76,6 +77,11 @@ i.small{
     line-height: 2rem;
     text-align: center;
     font-size: 1rem;
+}
+
+.wrapped{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* ***************** */
@@ -145,7 +151,7 @@ span.rotate{
 }
 
 .playlist-list{
-    height: 35rem;
+    height: calc(100vh - 22.5rem);
     overflow: scroll;
 }
 
@@ -154,7 +160,7 @@ span.rotate{
 /* ***************** */
 
 main{
-    width: calc(100vw - var(--header-width) - 1rem);
+    width: var(--main-width);
     margin: 0 0 0 .5rem;
     padding: 1rem;
 }
@@ -198,6 +204,30 @@ main .installa{
     border-radius: 50%;
     align-self: center;
     padding-top: .15rem;
+}
+
+section.recently{
+    padding: 1rem 0;
+}
+
+article.disk.rounded{
+    width: calc((var(--main-width) / 4) - 1.6rem);
+    height: 4rem;
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.1);
+    margin: .5rem;
+}
+
+article.disk img{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+article.disk h2{
+    line-height: 4rem;
+    margin-left: .5rem;
+    font-size: 1rem;
 }
 
 /* ***************** */
