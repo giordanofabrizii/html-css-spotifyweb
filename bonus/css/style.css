@@ -156,6 +156,48 @@ span.rotate{
 main{
     width: calc(100vw - var(--header-width) - 1rem);
     margin: 0 0 0 .5rem;
+    padding: 1rem;
+}
+
+main .circle{
+    background-color: rgba(0,0,0,0.5);
+    height: 2.3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+main .settings .circle:nth-child(2){
+    margin: 0 .3rem;
+}
+
+main .installa{
+    background-color: rgba(0,0,0,0.5);
+    height: 2.3rem;
+    padding: 0 .8rem;
+    border-radius: 3rem;
+    align-content: center;
+    text-align: center;
+}
+
+.installa i{
+    font-size: 1rem;
+    align-self: center;
+    margin-right: .3rem;
+}
+
+.installa h3{
+    font-size: .8rem;
+    align-self: center;
+}
+
+.circle > img{
+    width: 1.6rem;
+    border-radius: 50%;
+    align-self: center;
+    padding-top: .15rem;
 }
 
 /* ***************** */
