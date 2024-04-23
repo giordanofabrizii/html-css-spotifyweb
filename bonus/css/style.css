@@ -9,16 +9,19 @@
 /* ***************** */
 :root{
     --black: #000000;
-    --gray: #121212;
+    --dark-gray: #121212;
+    --gray: #232323;
     --light-gray: #b3b3b3;
+    --spotify-green: #1dd35e;
     --header-width: 27rem;
-    --footer-height:7rem;
+    --footer-height:5rem;
 }
 
 body {
     background-color: black;
     color: white;
     font-family: Montserrat, sans-serif;
+    height: 100vh;
 }
 
 .row{
@@ -36,6 +39,43 @@ body {
 
 .main-container{
     padding: .5rem;
+    height: calc(100vh - var(--footer-height));
+}
+
+a.button{
+    font-size: .8rem;
+    background-color: var(--gray);
+    padding: .5rem .8rem;
+    border-radius: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+i.giant{
+    line-height: 3rem;
+    font-size: 1.5rem;
+    margin: 0 1rem 0 .5rem;
+}
+
+i.medium{
+    line-height: 2rem;
+    margin: .5rem 0;
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+}
+
+i.small{
+    margin: .5rem 0;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
 }
 
 /* ***************** */
@@ -51,19 +91,9 @@ header .library{
     padding: .5rem;
 }
 
-i.giant{
-    line-height: 3rem;
-    font-size: 1.5rem;
-    margin: 0 1rem
-}
-
-i.medium{
-    line-height: 2rem;
-    margin: .5rem 0;
-    font-size: 1.2rem;
-    height: 2rem;
-    width: 2rem;
-    text-align: center;
+header .centered{
+    width: 95%;
+    margin: 0 auto;
 }
 
 header h1{
@@ -75,13 +105,61 @@ header section.nav{
     margin-bottom: .5rem;
 }
 
+header .button{
+    margin-right: .5rem;
+}
+
+header h3{
+    line-height: 1.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    align-self: center;
+}
+
+header .playlist-list article{
+    height: 3rem;
+    margin: .5rem 0;
+}
+
+header img.rounded{
+    border-radius: 3px;
+}
+
+span.rotate i{
+    transform: rotate(45deg);
+    align-self: center;
+    font-size: .8rem;
+}
+
+span.rotate{
+    margin-right: .5rem;
+}
+
+.playlist-info{
+    margin-left: .5rem;
+    align-content: center;
+}
+
+.playlist-info h2{
+    font-size: 1rem;
+}
+
+.playlist-list{
+    height: 35rem;
+    overflow: scroll;
+}
+
 /* ***************** */
 /* ! COLOR CLASSES */
 /* ***************** */
 .gray-back{
-    background-color: var(--gray);
+    background-color: var(--dark-gray);
 }
 
 .light-gray-color{
     color: var(--light-gray);
+}
+
+.green-color{
+    color: var(--spotify-green)
 }
