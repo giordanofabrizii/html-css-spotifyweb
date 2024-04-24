@@ -174,7 +174,7 @@ span.rotate{
 }
 
 .playlist-list{
-    height: calc(100vh - 22.5rem);
+    height: calc(100vh - 23rem);
     overflow: scroll;
 }
 
@@ -379,4 +379,87 @@ footer .volume-controller i{
 
 .green-color{
     color: var(--spotify-green)
+}
+
+/* ***************** */
+/* ! MEDIA QUERIES */
+/* ***************** */
+
+@media screen and (max-width: 1400px){
+    article.card:last-child{
+        display: none;
+    }
+
+    article.card{
+        width: calc(100% / 6);
+    }
+
+    article.disk.rounded{
+        height: 3rem;
+    }
+
+    article.disk h2{
+        line-height: 3rem;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    article.card:nth-child(6){
+        display: none;
+    }
+
+    article.card{
+        width: calc(100% / 5);
+    }
+}
+
+@media screen and (max-width: 1300px){
+    article.disk.rounded{
+        width: calc((100% / 2) - 1rem);
+    }
+
+    article.card:nth-child(5){
+        display: none;
+    }
+
+    article.card{
+        width: calc(100% / 4);
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+    article.card:nth-child(4){
+        display: none;
+    }
+
+    article.card{
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 872px){
+    article.card:nth-child(3){
+        display: none;
+    }
+
+    article.card{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 860px){
+    :root{
+        --header-width: 4rem;
+    }
+
+    header h1,
+    .playlist-info,
+    .tablet-invisible{
+        display: none;
+    }
+    
+    .playlist-list{
+    height: calc(100vh - 18rem);
+    }
 }
