@@ -349,7 +349,9 @@ footer .player i:nth-child(3){
 }
 
 .time .actual-progress{
-    width: 30%;
+    width: 0;
+    animation: timing 5s linear infinite;
+    
 }
 
 footer .volume-controller i{
@@ -379,6 +381,20 @@ footer .volume-controller i{
 
 .green-color{
     color: var(--spotify-green)
+}
+
+/* ***************** */
+/* ! keyframes */
+/* ***************** */
+
+@keyframes timing {
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 100%;
+    }
 }
 
 /* ***************** */
