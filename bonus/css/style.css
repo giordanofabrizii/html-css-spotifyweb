@@ -14,7 +14,7 @@
     --light-gray: #b3b3b3;
     --spotify-green: #1dd35e;
     --header-width: 27rem;
-    --footer-height:5rem;
+    --footer-height:5.5rem;
     --main-width: calc(100vw - var(--header-width) - 1rem);
 }
 
@@ -82,6 +82,29 @@ i.small{
 .wrapped{
     display: flex;
     flex-wrap: wrap;
+}
+
+.progress-bar{
+    background-color: var(--gray);
+    border-radius: 3rem;
+}
+
+.actual-progress{
+    background-color: var(--light-gray);
+    border-radius: 3rem;
+    position: relative;
+    left: 0;
+    height: 100%;
+}
+
+.sphere{
+    height: 180%;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -33%;
 }
 
 /* ***************** */
@@ -277,7 +300,71 @@ img.artist{
 /* ! FOOTER CLASSES */
 /* ***************** */
 
+footer {
+    justify-content: space-between;
+}
 
+section.current-song,
+section.player,
+div.time,
+section.volume-controller{
+    padding: .5rem;
+    align-items: center;
+}
+
+section.current-song img{
+    height: 100%;
+}
+
+section.current-song h2{
+    font-size: 1rem;
+}
+
+.controls{
+    justify-content: center ;
+}
+
+section.current-song p{
+    font-size: .7rem;
+}
+
+div.song-info{
+    margin: 0 1rem;
+}
+
+footer .player i{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+footer .player i:nth-child(3){
+    font-size: 2rem;
+}
+
+.time .progress-bar{
+    width: 30vw;
+    margin: 0 0.5rem;
+    height: .35rem;
+}
+
+.time .actual-progress{
+    width: 30%;
+}
+
+footer .volume-controller i{
+    margin: 0 .5rem;
+}
+
+.volume-controller .progress-bar{
+    width: 5vw;
+    margin: 0 0.5rem;
+    height: .3rem;
+}
+
+.volume-controller .actual-progress{
+    width: 30%;
+}
 
 /* ***************** */
 /* ! COLOR CLASSES */
