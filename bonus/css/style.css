@@ -127,7 +127,7 @@ header .playlist-list article{
     margin: .5rem 0;
 }
 
-header img.rounded{
+img.rounded{
     border-radius: 3px;
 }
 
@@ -162,7 +162,18 @@ span.rotate{
 main{
     width: var(--main-width);
     margin: 0 0 0 .5rem;
+}
+
+main .container{
+    height: calc(100vh - var(--footer-height) - 1rem);
+    max-width: 106rem;
     padding: 1rem;
+    overflow: scroll;
+}
+
+main nav{
+    position: fixed;
+    width: calc(var(--main-width) - 3rem);
 }
 
 main .circle{
@@ -208,10 +219,11 @@ main .installa{
 
 section.recently{
     padding: 1rem 0;
+    margin-top: 2rem;
 }
 
 article.disk.rounded{
-    width: calc((var(--main-width) / 4) - 1.35rem);
+    width: calc((100% / 4) - 1rem);
     height: 4rem;
     object-fit: contain;
     border-radius: 4px;
@@ -230,25 +242,35 @@ article.disk h2{
     font-size: 1rem;
 }
 
-article.disk:nth-child(4n + 1){
-    margin-left: 0;
-}
-
-article.disk:nth-child(4n){
-    margin-right: 0;
-}
-
 main > section > h2{
     margin-top: 1rem;
 }
 
 article.card{
-    width: calc(var(--main-width) / 7);
+    width: calc(100% / 7);
     padding: 0.5rem;
 }
 
 article.card img{
     width: 100%;
+}
+
+article.card h2{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+article.card p{
+    font-size: .8rem;
+}
+
+img.artist{
+    border-radius: 50%;
 }
 
 /* ***************** */
